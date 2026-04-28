@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom' // 
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
-import QnA from './QnA' // Import komponen QnA yang sudah kita buat tadi
+import QnA from '../src/qna' // Import komponen QnA yang sudah kita buat tadi
 import './App.css'
 
 // Komponen Home (isi asli App kamu)
