@@ -1,39 +1,33 @@
-// import {
-//   Accordion,
-//   AccordionContent,
-//   AccordionItem,
-//   AccordionTrigger,
-// } from "./components/ui/accordion"
+import { AccordionSub, type AccordionItemData } from './elements/Accordion'
 
-// export function AccordionDemo() {
-//   return (
-//     <Accordion
-//       type="single"
-//       collapsible
-//       defaultValue="shipping"
-//       className="max-w-lg"
-//     >
-//       <AccordionItem value="shipping">
-//         <AccordionTrigger>What are your shipping options?</AccordionTrigger>
-//         <AccordionContent>
-//           We offer standard (5-7 days), express (2-3 days), and overnight
-//           shipping. Free shipping on international orders.
-//         </AccordionContent>
-//       </AccordionItem>
-//       <AccordionItem value="returns">
-//         <AccordionTrigger>What is your return policy?</AccordionTrigger>
-//         <AccordionContent>
-//           Returns accepted within 30 days. Items must be unused and in original
-//           packaging. Refunds processed within 5-7 business days.
-//         </AccordionContent>
-//       </AccordionItem>
-//       <AccordionItem value="support">
-//         <AccordionTrigger>How can I contact customer support?</AccordionTrigger>
-//         <AccordionContent>
-//           Reach us via email, live chat, or phone. We respond within 24 hours
-//           during business days.
-//         </AccordionContent>
-//       </AccordionItem>
-//     </Accordion>
-//   )
-// }
+const FaQ: AccordionItemData[] = [
+  {
+    value: 'Info',
+    trigger: 'Apa itu FunikIn?',
+    content: 'FunikIn adalah platform digital untuk berbagi pengalaman dan mendapatkan informasi terkini.'
+  },
+  {
+    value: 'Tutor',
+    trigger: 'Bagaimana cara mendaftar?',
+    content: 'Anda dapat mendaftar melalui halaman utama dengan mengklik tombol Sign Up dan mengisi formulir yang tersedia.'
+  },
+  {
+    value: 'Tarif',
+    trigger: 'Apakah FunikIn gratis?',
+    content: 'Ya, FunikIn menyediakan layanan gratis untuk semua pengguna dengan fitur-fitur dasar.'
+  },
+  {
+    value: 'Support',
+    trigger: 'Bagaimana cara menghubungi support?',
+    content: 'Anda dapat menghubungi tim support kami melalui email support@funikin.com atau chat langsung di aplikasi.'
+  }
+];
+
+export default function App() {
+  return (
+    <main className="p-5">
+      <h1 className="text-2xl font-bold mb-4">Frequently Asked Questions</h1>
+      <AccordionSub items={FaQ} />
+    </main>
+  )
+}
