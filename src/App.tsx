@@ -31,18 +31,25 @@ const FaQ: AccordionItemData[] = [
 
 function FaqPage() {
   return (
-    <main className="p-5">
-      <h1 className="text-2xl font-bold mb-4">Frequently Asked Questions</h1>
+    <main className="p-5 flex flex-col justify-center items-center">
       <AccordionSub items={FaQ} />
     </main>
   );
 }
 
-function QnAPage() {
+function ButtonHeader() {
   return (
-      <QnA /> 
-  );
+    <main>
+      <ButtonGroupEl />
+    </main>
+  )
 }
+
+// function QnAPage() {
+//   return (
+//       <QnA /> 
+//   );
+// }
 
 export default function App() {
   return (
@@ -59,8 +66,9 @@ export default function App() {
     //   </Routes>
     // </BrowserRouter>
     <main>
-      <header className='w-full p-2 shadow-sm'>
+      <header className='w-full p-2 shadow-sm flex justify-between items-center'>
         <h1>FunikIn</h1>
+        <ButtonHeader />
       </header>
         <FaqPage />
     </main>
