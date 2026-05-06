@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AccordionSub, type AccordionItemData } from './elements/Accordion';
 import { ButtonGroupEl } from './elements/ButtonGroup';
 // Ubah 'qna' menjadi 'QnA' (Huruf Kapital) agar React mengenalinya sebagai komponen
-import QnA from './QnA/qna'; 
+// import QnA from './QnA/qna'; 
 
 // --- DATA FAQ ---
 const FaQ: AccordionItemData[] = [
