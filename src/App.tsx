@@ -28,7 +28,7 @@ const FaQ: AccordionItemData[] = [
   }
 ];
 
-// --- KOMPONEN HALAMAN FAQ ---
+
 function FaqPage() {
   return (
     <main className="p-5">
@@ -38,14 +38,12 @@ function FaqPage() {
   );
 }
 
-// --- KOMPONEN HALAMAN INPUT QnA ---
 function QnAPage() {
   return (
       <QnA /> 
   );
 }
 
-// --- MAIN APP DENGAN ROUTING ---
 export default function App() {
   return (
     // <BrowserRouter>
